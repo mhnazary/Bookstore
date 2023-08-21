@@ -1,5 +1,5 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 
 const Forms = () => (
   <div className="form">
@@ -7,7 +7,9 @@ const Forms = () => (
     <form>
       <input type="text" placeholder="Book Title" />
       <input type="text" placeholder="Author" />
-      <button type="button" className="form-btn" id="addBttn">ADD BOOK</button>
+      <button type="button" className="form-btn" id="addBttn">
+        ADD BOOK
+      </button>
     </form>
   </div>
 );
