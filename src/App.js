@@ -1,15 +1,12 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import BookList from './components/bookList';
-import Catagories from './catagories/catagories';
+import BookList from './components/BookList';
+import Form from './components/Form';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<BookList />} />
-        <Route path="/catagories" element={<Catagories />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <BookList />
+      <Form />
+    </div>
   );
 }
 

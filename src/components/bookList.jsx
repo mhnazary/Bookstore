@@ -1,19 +1,12 @@
-import Navbar from './Navbar';
-import Book from './books';
-import Form from './form';
+import React from 'react';
+import Books from './Books';
 
-function BookList() {
-  return (
-    <>
-      <Navbar />
-      <div className="">
-        <Book title="Alone man" author="Mahram Hossain" />
-        <Book title="Alone woman" author="Khadim Hossain" />
-        <Book title="Vocabulary Power 1" author="Ali Hossain" />
-      </div>
-      <Form />
-    </>
-  );
-}
+const BookList = () => (
+  <div>
+    <Books title="The Hunger Games" author="Suzanne Collins" />
+    <Books title="Dune" author="Frank Herbert" />
+    <Books title="Cell" author="Stephen King" />
+  </div>
+);
 
 export default BookList;
