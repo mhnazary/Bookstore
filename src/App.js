@@ -1,10 +1,10 @@
-import BookList from './components/BookList';
+import BookLists from './components/bookList';
 import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
-      <BookList />
+      <BookLists />
       <Form />
     </div>
   );
