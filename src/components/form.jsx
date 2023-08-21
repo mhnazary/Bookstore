@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const Form = () => (
+const Forms = () => (
   <div className="form">
     <h1 className="book-title">ADD NEW BOOK</h1>
     <form>
@@ -12,4 +12,4 @@ const Form = () => (
   </div>
 );
 
-export default Form;
+export default Forms;
