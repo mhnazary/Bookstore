@@ -10,6 +10,7 @@
 
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
+In the project directory, you can run :
 
 - [📗 Table of Contents](#table-of-contents)
 - [📖 Description](#description)
@@ -29,6 +30,7 @@
 bookstor is a website that can show the book title and it's author. It is a Single Page App (SPA).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+### `npm test` 
 
 <!-- FEATURES -->
 ### ⭐️ Key Features <a name="key-features"></a>
