@@ -1,5 +1,5 @@
 import React from 'react';
-import Books from './Books';
+import Books from './books';
 
 const BookList = () => (
   <div>
