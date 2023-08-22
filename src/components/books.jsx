@@ -6,21 +6,21 @@ import { removeBook } from '../redux/books/booksSlice';
 const Book = ({ id, title, author }) => {
   const dispatch = useDispatch();
 
-  const handleRemoveBook = () => {
+  const handleRemoveBooks = () => {
     dispatch(removeBook(id));
   };
 
   return (
     <section className="book">
       <div>
-        <h3 className="book-title">{title}</h3>
-        <p className="book-author">{author}</p>
+        <h3 className="bTitle">{title}</h3>
+        <p className="bAuthor">{author}</p>
       </div>
       <button
         type="button"
         className="button"
         id="deleteBttn"
-        onClick={handleRemoveBook}
+        onClick={handleRemoveBooks}
       >
         Remove
       </button>
