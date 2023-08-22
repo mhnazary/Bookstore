@@ -1,11 +1,11 @@
 import React from 'react';
-import Books from './Books';
+import Books from './books';
 
 const BookList = () => (
   <div>
-    <Books title="The Hunger Games" author="Suzanne Collins" />
-    <Books title="Dune" author="Frank Herbert" />
-    <Books title="Cell" author="Stephen King" />
+    <Books title="Alone man" author="Mahram Hossain" />
+    <Books title="Alone Women" author="Khadim Hossain" />
+    <Books title="My lovely boy" author="Ali Hossain" />
   </div>
 );
 

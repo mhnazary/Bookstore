@@ -1,11 +1,11 @@
-import BookList from './components/BookList';
-import Form from './components/Form';
+import Forms from './components/form';
+import BookList from './components/bookList';
 
 function App() {
   return (
     <div className="App">
       <BookList />
-      <Form />
+      <Forms />
     </div>
   );
 }
