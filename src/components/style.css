@@ -24,23 +24,22 @@ a {
   text-decoration: none;
 }
 
-.public-class {
+.book {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   box-shadow: 1px 1px 5px black;
   width: 80%;
   margin: 1rem auto;
   height: 6rem;
   padding: 1.5rem;
-}
-
-.book {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   width: 80%;
   height: 100%;
+  
 }
 
 .button {

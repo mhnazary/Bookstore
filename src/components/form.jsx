@@ -22,7 +22,7 @@ const Form = () => {
   };
 
   return (
-    <div>
+    <div className="form">
       <h3 className="book-title">Add new book</h3>
       <form>
         <input
@@ -39,7 +39,7 @@ const Form = () => {
         />
         <button
           type="button"
-          className="button"
+          className="form-btn"
           id="addBttn"
           onClick={handleAddBook}
         >

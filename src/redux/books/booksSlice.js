@@ -24,7 +24,7 @@ const initialState = {
 };
 
 const booksSlice = createSlice({
-  name: 'book',
+  name: 'books', // Corrected the name to 'books'
   initialState,
   reducers: {
     addBook: (state, action) => {
