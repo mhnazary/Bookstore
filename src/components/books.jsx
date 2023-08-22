@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Books = ({ title, author }) => (
+const Book = ({ title, author }) => (
   <div className="public-class">
     <div className="book">
       <div>
@@ -17,9 +17,9 @@ const Books = ({ title, author }) => (
     </div>
   </div>
 );
-Books.propTypes = {
+Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };
 
-export default Books;
+export default Book;

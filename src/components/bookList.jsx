@@ -1,12 +1,22 @@
 import React from 'react';
-import Books from './books';
+import { useSelector } from 'react-redux';
+import Book from './books';
 
-const BookList = () => (
-  <div>
-    <Books title="Alone man" author="Mahram Hossain" />
-    <Books title="Alone Women" author="Khadim Hossain" />
-    <Books title="My lovely boy" author="Ali Hossain" />
-  </div>
-);
+const BookList = () => {
+  const { books } = useSelector((state) => state.books);
+
+  return (
+    <div>
+      {books.map((book) => (
+        <Book
+          key={book.item_id}
+          title={book.title}
+          author={book.author}
+          category={book.category}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default BookList;
