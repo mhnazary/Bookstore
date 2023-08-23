@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getBooks } from '../redux/books/booksSlice';
 import Book from './books';
+import '../index.css';
 
 const BookList = () => {
-  const BK = useSelector((state) => Object.values(state.BK).flatMap((bookArray) => bookArray));
+  const BK = useSelector((state) => Object.values(state.books).flatMap((bookArray) => bookArray));
   const dispatch = useDispatch();
 
   useEffect(() => {
