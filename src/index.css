@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +44,7 @@ a {
 }
 
 .form {
-  border: 1px solid #009aed;
+  border: 1px solid green;
   width: 80%;
   margin: 1rem auto;
   text-align: center;
@@ -57,3 +60,5 @@ input {
   width: 40%;
   padding: 0.3rem;
 }
+
+@tailwind utilities;

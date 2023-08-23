@@ -1,12 +1,35 @@
-import React from 'react';
-import Books from './books';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getBooks } from '../redux/books/booksSlice';
+import Book from './books';
+import '../index.css';
 
-const BookList = () => (
-  <div>
-    <Books title="Alone man" author="Mahram Hossain" />
-    <Books title="Alone Women" author="Khadim Hossain" />
-    <Books title="My lovely boy" author="Ali Hossain" />
-  </div>
-);
+const BookList = () => {
+  const BK = useSelector((state) => Object.values(state.books).flatMap((bookArray) => bookArray));
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+
+  if (BK.length === 0) {
+    return <p>Add some books</p>;
+  }
+
+  return (
+    <>
+      <div>
+        {BK.map((book) => (
+          <Book
+            key={book.item_id}
+            id={book.item_id}
+            title={book.title}
+            author={book.author}
+          />
+        ))}
+      </div>
+    </>
+  );
+};
 
 export default BookList;
