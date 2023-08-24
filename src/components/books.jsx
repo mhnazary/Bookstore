@@ -45,7 +45,7 @@ const Book = ({ id, title, author }) => {
             {change}
           </h1>
           <button
-            className="bg-blue px-4 py-1 text-white rounded-sm mt-3 text-base font-light font-serif"
+            className="bg-blue px-6 py-2 text-white rounded-sm mt-3 text-sm font-serif"
             type="button"
             onClick={handleChange}
           >
