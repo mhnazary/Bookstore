@@ -63,12 +63,13 @@ a {
 }
 
 .form {
-  border: 1px solid green;
-  width: 80%;
-  margin: 1rem auto;
-  text-align: center;
+  border-top: 1px solid lightgray;
+  width: 65rem;  
+  margin: 3rem auto;
+  text-align: left;
   border-radius: 2px;
-  padding: 0.3rem;
+  padding: 0.3rem 0.3rem 2rem 0.3rem;
+  background-color: #f5f6fa;
 }
 
 .form-btn {
@@ -76,8 +77,8 @@ a {
 }
 
 input {
-  width: 40%;
-  padding: 0.3rem;
+  padding: 0.7rem;
+  border-radius: 4px;
 }
 
 @tailwind utilities;
