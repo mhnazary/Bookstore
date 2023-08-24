@@ -21,14 +21,14 @@ const Book = ({ id, title, author }) => {
           <h3 className="book-title font-serif font-bold text-xl mb-1">{title}</h3>
           <p className="book-author text-sm font-serif text-blue font-extralight">{author}</p>
         </div>
-        <div className="flex justify-evenly w-1/2 items-center text-blue font-serif text-base mt-1">
-          <a href="###" onClick={handleRemoveBook}>
+        <div className="flex justify-start w-1/2 items-center text-blue font-serif text-base mt-1">
+          <a href="###" className="mr-4">
             commens
           </a>
-          <a href="###" onClick={handleRemoveBook}>
+          <a href="###" className="mr-4" onClick={handleRemoveBook}>
             remove
           </a>
-          <a href="###" onClick={handleRemoveBook}>
+          <a href="###">
             edit
           </a>
         </div>

@@ -25,8 +25,8 @@ const Form = () => {
     setAuthor('');
   };
   return (
-    <div className="form p-4">
-      <h3 className="book-title font-bold text-2xl mb-4 text-gray-400">Add new book</h3>
+    <div className="form">
+      <h3 className="book-title font-bold text-2xl mb-4 text-gray-400">ADD NEW BOOK</h3>
       <form onSubmit={submit}>
         <input
           className="border border-gray-400 w-1/2 mr-8"
@@ -36,13 +36,13 @@ const Form = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          className="border border-gray-400 w-3/12 mr-8 px-4"
+          className="border border-gray-400 w-72 mr-8 px-4"
           type="text"
           placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit" className="form-btn rounded-sm bg-blue px-12 py-3" id="addBtn">Add Book</button>
+        <button type="submit" className="form-btn rounded-sm bg-blue px-16 py-3 text-white" id="addBtn">Add Book</button>
       </form>
     </div>
   );
