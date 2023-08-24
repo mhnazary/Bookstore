@@ -25,24 +25,24 @@ const Form = () => {
     setAuthor('');
   };
   return (
-    <div className="form p-4">
-      <h3 className="book-title font-bold text-2xl mb-4">Add new book</h3>
+    <div className="form">
+      <h3 className="book-title font-bold text-2xl mb-4 text-gray-400">ADD NEW BOOK</h3>
       <form onSubmit={submit}>
         <input
-          className="border border-gray-400"
+          className="border border-gray-400 w-1/2 mr-8"
           type="text"
           placeholder="Book Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          className="border border-gray-400"
+          className="border border-gray-400 w-72 mr-8 px-4"
           type="text"
           placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="submit" className="form-btn px-4 border border-black rounded-sm text-blue" id="addBtn">Add Book</button>
+        <button type="submit" className="form-btn rounded-sm bg-blue px-16 py-3 text-white" id="addBtn">Add Book</button>
       </form>
     </div>
   );
