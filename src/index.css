@@ -7,20 +7,37 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
-  height: 4rem;
+  height: 5.938rem;
   padding: 0.5rem 5rem;
   align-items: center;
-  box-shadow: 4px 1px 10px gray;
+  background-color: #fff;
+  margin-bottom: 3rem;
 }
 
 .nav-menu {
-  width: 25%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.NavLink {
+  color: darkgray;
+}
+
+.active {
+  color: black;
+}
+
+.userLogo {
+  border: none;
 }
 
 a {
@@ -29,14 +46,16 @@ a {
 
 .book {
   text-align: left;
-  box-shadow: 1px 1px 5px black;
-  margin: 1rem auto;
-  height: 6rem;
-  padding: 1.5rem;
+  margin: 1rem auto 0;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 80%;
+  width: 65rem;
+  height: 10.6rem;
+  background-color: white;
+  padding: 1rem 1.688rem;
+  border-radius: 4px;
+  border: 1px solid lightgray;
 }
 
 .button {
