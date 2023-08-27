@@ -51,11 +51,6 @@ Ensure that you have Node.js installed on your machine.
 ### Installation
 Clone the repository to your local machine and navigate to the project directory.
 
-```shell
-git clone https://github.com/mhnazary/bookstore.git
-cd math-magicians
-```
-
 ### Dependencies
 Install the necessary dependencies using npm.
 
