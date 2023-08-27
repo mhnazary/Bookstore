@@ -35,7 +35,7 @@ bookstor is a website that can show the book title and it's author. It is a Sing
 <!-- FEATURES -->
 ### ⭐️ Key Features <a name="key-features"></a>
 
-- You can see the book title and it's author.
+- You can see the book title and it's authors.
 - You can add and remove new book.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
